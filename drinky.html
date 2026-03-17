@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Drinky</title>
+    <link rel="stylesheet" href="drinky.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Drinky</h1>
+        </header>
+
+        <main>
+            <section class="card">
+                <label for="user-select">Kdo pije?</label>
+                <select id="user-select">
+                    <option value="" disabled selected>Vyberte uživatele...</option>
+                </select>
+            </section>
+
+            <section id="drink-list" class="drink-list">
+                <div class="loader">Načítám nabídku...</div>
+            </section>
+        </main>
+
+        <footer>
+            <button id="send-data" class="btn-primary">ODESLAT DATA</button>
+            <div id="status-message" class="status-message"></div>
+        </footer>
+    </div>
+    <script src="drinky.js"></script>
+</body>
+</html>
